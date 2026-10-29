@@ -1,39 +1,29 @@
+
 const Loading = () => {
   return (
-    <div className="fixed inset-0 z-[9999] flex h-screen w-full items-center justify-center bg-white">
-      <div className="relative flex h-[160px] w-[160px] items-center justify-center">
-        {/* Animated outer rings */}
-        <div className="absolute inset-0 rounded-full border border-primary/20 animate-ping" />
+    <div className="fixed inset-0 z-[9999] flex min-h-dvh w-full flex-col items-center justify-center bg-[#F7F7F5]">
+      {/* Brand */}
+      <div className="flex flex-col items-center">
+        <h1 className="animate-pulse text-5xl font-bold tracking-[-0.08em] text-[#171717] sm:text-6xl">
+          TITASWEB
+        </h1>
 
-        <div className="absolute inset-2 rounded-full border-2 border-transparent border-t-primary border-r-primary animate-spin" />
-
-        <div className="absolute inset-5 rounded-full border border-primary/30 animate-[spin_3s_linear_infinite_reverse]" />
-
-        {/* Brand */}
-        <div className="relative flex flex-col items-center">
-          <h1 className="text-2xl font-bold tracking-tight text-primary">
-            Oqtos
-          </h1>
-
-          {/* Animated loading dots */}
-          <div className="mt-2 flex items-center gap-1">
-            <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-primary" />
-            <span
-              className="h-1.5 w-1.5 animate-bounce rounded-full bg-primary"
-              style={{ animationDelay: "150ms" }}
-            />
-            <span
-              className="h-1.5 w-1.5 animate-bounce rounded-full bg-primary"
-              style={{ animationDelay: "300ms" }}
-            />
-          </div>
+        {/* Animated progress line */}
+        <div className="mt-8 h-[2px] w-40 overflow-hidden bg-black/10">
+          <div className="h-full w-1/3 animate-[loading_1.5s_ease-in-out_infinite] bg-black" />
         </div>
+
+        <p className="mt-5 text-[10px] font-medium uppercase tracking-[0.35em] text-black/40">
+          Curating Your Style
+        </p>
       </div>
+
+      {/* Bottom text */}
+      <p className="absolute bottom-10 text-[9px] uppercase tracking-[0.3em] text-black/30">
+        Contemporary Fashion
+      </p>
     </div>
   );
 };
 
 export default Loading;
-
-
-

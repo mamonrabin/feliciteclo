@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -17,11 +16,7 @@ type ProductGallaryProps = {
   video?: string;
 };
 
-const ProductGallary = ({
-  images,
-  name,
-  video,
-}: ProductGallaryProps) => {
+const ProductGallary = ({ images, name, video }: ProductGallaryProps) => {
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
   const [activeSlide, setActiveSlide] = useState(0);
 
@@ -32,9 +27,7 @@ const ProductGallary = ({
       <Swiper
         modules={[A11y]}
         onSwiper={setSwiper}
-        onSlideChange={(instance) =>
-          setActiveSlide(instance.activeIndex)
-        }
+        onSlideChange={(instance) => setActiveSlide(instance.activeIndex)}
         className="h-full w-full"
       >
         {/* Product Video */}
@@ -58,10 +51,11 @@ const ProductGallary = ({
               <Image
                 src={image}
                 alt={`${name} - Image ${index + 1}`}
-                fill
+                width={800}
+                height={1000}
                 priority={index === 0 && !video}
                 sizes="(max-width: 1023px) 100vw, 60vw"
-                className="pointer-events-none object-contain"
+                className="pointer-events-none h-full w-full object-contain"
                 draggable={false}
               />
             </div>

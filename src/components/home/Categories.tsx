@@ -95,7 +95,6 @@ const Categories = () => {
               <Image
                 src={category.image}
                 alt={category.title}
-                fill
                 sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
                 className="object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
               />

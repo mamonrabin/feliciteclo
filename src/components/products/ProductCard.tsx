@@ -26,7 +26,6 @@ const ProductCard:React.FC<ProductProps> = ({product}) => {
                   <Image
                     src={product.frontImage}
                     alt={product.title}
-                    fill
                     sizes="(max-width: 767px) 180px, (max-width: 1023px) 220px, 260px"
                     className="object-contain transition-all duration-700 group-hover:scale-105 group-hover:opacity-0"
                   />
@@ -37,7 +36,6 @@ const ProductCard:React.FC<ProductProps> = ({product}) => {
                   <Image
                     src={product.backimage}
                     alt={`${product.title} back view`}
-                    fill
                     sizes="(max-width: 767px) 180px, (max-width: 1023px) 220px, 260px"
                     className="scale-[1.03] object-contain opacity-0 transition-all duration-700 group-hover:scale-100 group-hover:opacity-100"
                   />

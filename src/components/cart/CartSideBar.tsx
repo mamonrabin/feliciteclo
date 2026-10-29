@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -31,8 +30,7 @@ const CartSideBar = ({ scrolled, onClose }: CartSideBarProps) => {
   const price = 989;
   const subtotal = itemRemoved ? 0 : price * quantity;
 
-  const formatPrice = (amount: number) =>
-    `৳${amount.toLocaleString("en-BD")}`;
+  const formatPrice = (amount: number) => `৳${amount.toLocaleString("en-BD")}`;
 
   const handleOpenChange = (open: boolean) => {
     setIsCartOpen(open);
@@ -72,9 +70,7 @@ const CartSideBar = ({ scrolled, onClose }: CartSideBarProps) => {
             {!itemRemoved && (
               <span
                 className={`absolute -top-0.5 -right-0.5 flex h-4 w-4 items-center justify-center rounded-full text-[9px] font-bold ${
-                  scrolled
-                    ? "bg-primary text-white"
-                    : "bg-white text-primary"
+                  scrolled ? "bg-primary text-white" : "bg-white text-primary"
                 }`}
               >
                 {quantity}
@@ -142,7 +138,6 @@ const CartSideBar = ({ scrolled, onClose }: CartSideBarProps) => {
                   <Image
                     src={product1}
                     alt="Burn like a star OffWhite"
-                    fill
                     sizes="96px"
                     className="object-cover"
                   />

@@ -118,7 +118,7 @@ const HomeOverlayer = () => {
       <header className="relative z-30 flex items-center justify-between text-white">
         <h2 className="flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.25em] sm:text-xs">
           <span className="inline-block h-1.5 w-1.5 bg-white" />
-          <span>FÉLICITÉ</span>
+          <span>TITASWÉB</span>
         </h2>
 
         <button
@@ -161,7 +161,7 @@ const HomeOverlayer = () => {
           </div>
 
           <h1 className="my-1 pl-[0.12em] text-[clamp(2.8rem,9.5vw,8.5rem)] font-black uppercase leading-none tracking-[0.12em] text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.85)] sm:my-2 sm:pl-[0.18em] sm:tracking-[0.18em]">
-            FÉLICITÉ
+            TITASWÉB
           </h1>
 
           <p className="mt-1 max-w-lg text-[10px] font-medium uppercase tracking-[0.25em] text-white/80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] sm:mt-2 sm:text-xs sm:tracking-[0.35em] md:text-sm">
@@ -207,7 +207,7 @@ const HomeOverlayer = () => {
         </div>
 
         <div className="text-right tracking-[0.15em] text-white/60">
-          © 2026 FÉLICITÉ
+          © 2026 TITASWÉB
         </div>
       </footer>
     </section>
