@@ -9,7 +9,7 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 
-const WHATSAPP_NUMBER = "8801974004221";
+const WHATSAPP_NUMBER = "8801746770324";
 
 const socialLinks = [
   {

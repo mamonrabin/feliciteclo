@@ -129,7 +129,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="font-medium tracking-wide transition-colors hover:text-white"
                 >
-                  +880 1974-004221
+                  +880 1746770324
                 </a>
               </div>
             </div>

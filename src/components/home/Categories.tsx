@@ -1,7 +1,7 @@
 
 "use client";
 
-import Image, { StaticImageData } from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -68,7 +68,7 @@ const Categories = () => {
         modules={[Autoplay]}
         slidesPerView={1}
         spaceBetween={0}
-        loop={true}
+        loop
         speed={1000}
         autoplay={{
           delay: 4000,
@@ -86,7 +86,10 @@ const Categories = () => {
         className="h-[90vh] md:h-screen"
       >
         {categories.map((category) => (
-          <SwiperSlide key={category.id}>
+          <SwiperSlide
+            key={category.id}
+            className="!h-full"
+          >
             <Link
               href={`/shop?category=${category.slug}`}
               className="group relative block h-full w-full overflow-hidden"
@@ -95,6 +98,7 @@ const Categories = () => {
               <Image
                 src={category.image}
                 alt={category.title}
+                fill
                 sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
                 className="object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
               />
